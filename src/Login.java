@@ -31,7 +31,7 @@ public class Login extends JFrame implements ActionListener {
         welcomeLabel2 = new JLabel("Please login to proceed");
         usernameLabel = new JLabel("Username");
         passwordLabel = new JLabel("Password");
-        iconLabel = new JLabel(new ImageIcon(ClassLoader.getSystemResource("Resources/Images/user.png")));
+        iconLabel = new JLabel(new ImageIcon(ClassLoader.getSystemResource("icons/user.png")));
         usernameTextField = new JTextField();
         passwordTextField = new JPasswordField();
         loginPanel = new JPanel();
@@ -45,7 +45,7 @@ public class Login extends JFrame implements ActionListener {
     private void layoutComponents() {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
-        setIconImage(new ImageIcon(ClassLoader.getSystemResource("Resources/Images/login.png")).getImage());
+        setIconImage(new ImageIcon(ClassLoader.getSystemResource("icons/login.png")).getImage());
         setTitle("Login");
         setLayout(new BorderLayout(10, 20));
 

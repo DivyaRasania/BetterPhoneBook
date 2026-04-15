@@ -19,7 +19,7 @@ public class Contacts extends JFrame {
 
         setTitle("Phone Book");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        ImageIcon tempImgIco1 = new ImageIcon(ClassLoader.getSystemResource("Resources/Images/phonebook.png"));
+        ImageIcon tempImgIco1 = new ImageIcon(ClassLoader.getSystemResource("icons/phonebook.png"));
         Image tempImg1 = tempImgIco1.getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT);
         ImageIcon phoneBookIcon = new ImageIcon(tempImg1);
         setIconImage(phoneBookIcon.getImage());
@@ -33,7 +33,7 @@ public class Contacts extends JFrame {
         JTextField searchTextField = new JTextField();
         searchTextField.setFont(font);
 
-        ImageIcon tempImgIco2 = new ImageIcon(ClassLoader.getSystemResource("Resources/Images/search.png"));
+        ImageIcon tempImgIco2 = new ImageIcon(ClassLoader.getSystemResource("icons/search.png"));
         Image tempImg2 = tempImgIco2.getImage().getScaledInstance(32, 32, Image.SCALE_AREA_AVERAGING);
         ImageIcon searchIcon = new ImageIcon(tempImg2);
         JButton searchButton = new JButton(searchIcon);
@@ -46,7 +46,7 @@ public class Contacts extends JFrame {
             tableRowSorter.setRowFilter(RowFilter.regexFilter("(?i)" + searchTerm));
         });
 
-        ImageIcon tempImgIco3 = new ImageIcon(ClassLoader.getSystemResource("Resources/Images/add.png"));
+        ImageIcon tempImgIco3 = new ImageIcon(ClassLoader.getSystemResource("icons/add.png"));
         Image tempImg3 = tempImgIco3.getImage().getScaledInstance(32, 32, Image.SCALE_AREA_AVERAGING);
         ImageIcon addIcon = new ImageIcon(tempImg3);
         JButton createButton = new JButton(addIcon);
@@ -83,14 +83,14 @@ public class Contacts extends JFrame {
         */
 
         /*
-        ImageIcon tempImgIco4 = new ImageIcon(ClassLoader.getSystemResource("Resources/Images/edit.png"));
+        ImageIcon tempImgIco4 = new ImageIcon(ClassLoader.getSystemResource("icons/edit.png"));
         Image tempImg4 = tempImgIco4.getImage().getScaledInstance(24, 24, Image.SCALE_AREA_AVERAGING);
         ImageIcon editIcon = new ImageIcon(tempImg4);
         IconCellRenderer renderer = new IconCellRenderer(editIcon);
         renderer.setHorizontalAlignment(SwingConstants.CENTER);
         tableLayout.getColumnModel().getColumn(4).setCellRenderer(renderer);
 
-        ImageIcon tempImgIco5 = new ImageIcon(ClassLoader.getSystemResource("Resources/Images/delete.png"));
+        ImageIcon tempImgIco5 = new ImageIcon(ClassLoader.getSystemResource("icons/delete.png"));
         Image tempImg5 = tempImgIco5.getImage().getScaledInstance(24, 24, Image.SCALE_AREA_AVERAGING);
         ImageIcon deleteIcon = new ImageIcon(tempImg5);
         renderer = new IconCellRenderer(deleteIcon);
@@ -143,7 +143,7 @@ public class Contacts extends JFrame {
         contactsPanel.add(tableLayout);
 
         // IMPORT/EXPORT
-        ImageIcon tempImgIco6 = new ImageIcon(ClassLoader.getSystemResource("Resources/Images/import.png"));
+        ImageIcon tempImgIco6 = new ImageIcon(ClassLoader.getSystemResource("icons/import.png"));
         Image tempImg6 = tempImgIco6.getImage().getScaledInstance(32, 32, Image.SCALE_AREA_AVERAGING);
         ImageIcon importIcon = new ImageIcon(tempImg6);
         JButton importButton = new JButton(" Import Contacts", importIcon);
@@ -187,7 +187,7 @@ public class Contacts extends JFrame {
             this.dispose();
         });
 
-        ImageIcon tempImgIco7 = new ImageIcon(ClassLoader.getSystemResource("Resources/Images/export.png"));
+        ImageIcon tempImgIco7 = new ImageIcon(ClassLoader.getSystemResource("icons/export.png"));
         Image tempImg7 = tempImgIco7.getImage().getScaledInstance(32, 32, Image.SCALE_AREA_AVERAGING);
         ImageIcon exportIcon = new ImageIcon(tempImg7);
         JButton exportButton = new JButton(" Export Contacts", exportIcon);
